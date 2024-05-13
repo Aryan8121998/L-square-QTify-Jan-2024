@@ -6,6 +6,7 @@ import FeedbackButton from "./FeedbackButton";
 import styles from "../modules/Navbar.module.css";
 
 const Navbar = ({onFeedbackButtonClick, totalAlbums, onFilter, onBlur}) => {
+  console.log("NavBar");
   return (
     <div className={styles.navbarToolbar}>
       <Logo src={logoImage} alt="QTify Logo" />
