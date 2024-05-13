@@ -1,33 +1,17 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Typography } from "@mui/material";
+import headphoneImage from "../assets/hero_headphones.png";
+import styles from "../modules/HeroSection.module.css";
 
 const HeroSection = () => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        bgcolor: "background.default",
-        color: "black",
-        height: "50vh",
-        // width: "100%",
-        px: "1rem",
-      }}
-    >
-      <Box sx={{fontWeight:"bold", textAlign:"center"}}>
-        <Typography variant="h3">100 Thousand Songs, ad-free</Typography>
-        <Typography variant="h3">Over thousands podcast episodes</Typography>
-      </Box>
-      <Box>
-        <img
-          src="Vibrating_headphone.svg"
-          alt="headphones"
-          width="100%"
-          height="100%"
-        />
-      </Box>
-    </Box>
+    <div className={styles.heroSection}>
+      <div className="">
+        <Typography variant="h4" className={styles.text}>100 Thousand Songs, ad-free</Typography>
+        <Typography variant="h4" className={styles.text}>Over thousands podcast episodes</Typography>
+      </div>
+      <img src={headphoneImage} alt="Headphones" className={styles.headphoneImage}/>
+    </div>
   );
 };
 
